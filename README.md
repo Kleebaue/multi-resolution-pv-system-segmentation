@@ -1,7 +1,6 @@
 # Multi-Resolution Segmentation of Solar Photovoltaic Systems Using Deep Learning
 
-Repository for the machine learning and remote sensing based model with examples described in Kleebauer, M.; Marz, C.;Reudenbach, C; Braun, M., Multi-Resolution Segmentation of Solar Photovoltaic Systems Using Deep Learning. 
-
+Repository for a machine learning and remote sensing based framework for segmenting solar photovoltaic systems at different image resolutions. 
 
 ## Abstract
 Existing deep learning networks for solar photovoltaic system segmentation focus almost exclusively on single image sources, both in terms of sensors used and image resolution. This often prevents the wide deployment of such networks. Our research introduces a novel network trained on a diverse range of image data, spanning UAVs, aerial and satellite imagery at both native and aggregated resolutions of 0.1 m, 0.2 m, 0.3 m, 0.8 m, 1.6 m and 3.2 m. Using extensive hyperparameter tuning, we first determined the best possible parameter combinations for the network based on the DeepLabV3 ResNet101 architecture. We then trained a model using the wide range of different image sources. The final network offers several advantages at once. It outperforms networks trained with single image sources in multiple test applications as measured by the F1-Score (95.27%) and IoU (91.04%), and since the training includes image data in a diverse range, it can also be applied to a variety of target imagery. The model is made freely available for further applications.
@@ -31,6 +30,12 @@ Comparison of the single-resolution trained networks versus the final multi-reso
 
 ## Model
 The final model is stored on Zenodo, after downloading it can simply be placed in the 'weights' folder. 
+
+## Data
+The repository does not contain any training data. However, these can be downloaded from the respective authors.  
+[[Mayer et al. 2020](https://github.com/kdmayer/PV_Pipeline)]
+[[Jiang et al. 2021](https://zenodo.org/record/5171712)]
+[[Kasmi et al. 2023](https://github.com/gabrielkasmi/bdappv)]  
 
 ## Usage
 Examples of hyperparameter tuning, training, validation and prediction can be found in 'scripts'. 
