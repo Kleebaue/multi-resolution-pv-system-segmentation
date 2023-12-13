@@ -32,7 +32,7 @@ Comparison of the single-resolution trained networks versus the final multi-reso
 ## Model
 The model is a DeepLabV3 ResNet101 variant with approximately 61 million model parameters and 258.7 GFLOPS. Trained using Python 3.10, Torch 1.14.0, and Torchvision 0.15.0, the final model configurations are summarized below. BCE loss was used as the loss function, Adam as the optimizer, 0.0001 as the learning rate, a batch size of 8, 100 epochs, and a stride of 2. The ASSP segmentation head was set to 2048 input channels and 12, 24, and 36 dilation rates. 
 
-The final model's weights are published on [[Zenodo](10.5281/zenodo.10036926)], after downloading it can simply be placed in the 'weights' folder. 
+!! The weights of the final model will soon be published on !! [[Zenodo](10.5281/zenodo.10036926)], after downloading it can simply be placed in the 'weights' folder. 
 
 ## Data
 The repository does not contain any training data. However, these can be downloaded from the respective authors.  
