@@ -32,7 +32,7 @@ Comparison of the single-resolution trained networks versus the final multi-reso
 ## Model
 The model is a DeepLabV3 ResNet101 variant with approximately 61 million model parameters and 258.7 GFLOPS. Trained using Python 3.10, Torch 1.14.0, and Torchvision 0.15.0, the final model configurations are summarized below. BCE loss was used as the loss function, Adam as the optimizer, 0.0001 as the learning rate, a batch size of 8, 100 epochs, and a stride of 2. The ASSP segmentation head was set to 2048 input channels and 12, 24, and 36 dilation rates. 
 
-!! The weights of the final model will soon be published on !! [[Zenodo](10.5281/zenodo.10036926)], after downloading it can simply be placed in the 'weights' folder. 
+The weights of the final model can be downloaded as [[Torch Model](https://owncloud.fraunhofer.de/index.php/s/8MRTJkxmCNA7vin/download)] or as [[ONNX Model](https://owncloud.fraunhofer.de/index.php/s/Ph9TC6BTxPi5oZZ/download)], after downloading it can simply be placed in the 'weights' folder. 
 
 ## Data
 The repository does not contain any training data. However, these can be downloaded from the respective authors.  
@@ -41,7 +41,9 @@ The repository does not contain any training data. However, these can be downloa
 [[Kasmi et al. 2023](https://github.com/gabrielkasmi/bdappv)]  
 
 ## Usage
-An demonstration of the network's application is executable on [[Google Colab]](https://colab.research.google.com/drive/1UZmu83Os8tVaLIiGjlXRbJ_zexIJK5uX?usp=sharing). Examples of hyperparameter tuning, training, validation and prediction can be found in 'scripts'. 
+An demonstration of the network's application is executable on [[Google Colab](https://colab.research.google.com/drive/1UZmu83Os8tVaLIiGjlXRbJ_zexIJK5uX?usp=sharing)]. Examples of hyperparameter tuning, training, validation and prediction can be found in 'scripts'. 
+
+The model can also be used directly via [[Deepness: Deep Neural Remote Sensing QGIS Plugin](https://github.com/PUTvision/qgis-plugin-deepness)]. More infos can be found under [[Read-the-Docs](https://qgis-plugin-deepness.readthedocs.io/en/latest/index.html)] and Model download in th [[Model Zoo](https://qgis-plugin-deepness.readthedocs.io/en/latest/main/main_model_zoo.html)]. Segmentation can be applied directly to background maps. 
 
 ## Funding
 This work is developed in the OASES Project - "Development and Demonstration of a Sustainable Open Access AU-EU Ecosystem for Energy System Modelling". The project is part of the LEAP-RE Program. LEAP-RE has received funding from the European Union ’s Horizon 2020 Research and Innovation Program under Grant Agreement 963530. The Research is funded by Bundesministerium für Bildung und Forschung (03SF067) to University of Kassel, Research funding providing by South African National Energy Development Institute (SANEDI) and Department of Science and Innovation (DSI) to CSIR for LEAP-RE OASES project.
